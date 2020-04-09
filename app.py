@@ -16,7 +16,7 @@ class MyApi(Resource):
     def post(self):
         args = parser.parse_args()
         val = args['arg01']
-        val_val = val + ' ---> flask'
+        val_val = val + ' ---> flask heroku'
         return {"after_api": val_val}
 
 
