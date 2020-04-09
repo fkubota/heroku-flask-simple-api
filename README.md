@@ -6,4 +6,6 @@ url: https://heroku-flask-simple-api.herokuapp.com/
 git: https://git.heroku.com/heroku-flask-simple-api.git
 
 - check
-	- curl: curl localhost:5002/myapi curl -d "arg01=hello_flask"
+	- curl(local): curl localhost:5002/myapi -d "arg01=hello_flask"
+    - curl(web): curl https://heroku-flask-simple-api.herokuapp.com/myapi -d "arg01=hello_flask"
+
